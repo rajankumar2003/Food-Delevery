@@ -1,0 +1,268 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Labrada', serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navigation */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    position: absolute;
+}
+
+#logo {
+    margin: 0px 50px;
+    filter: invert(100%);
+
+}
+
+#logo img {
+    height: 60px;
+    width: 60px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    padding: 5px 14px;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    margin: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* home section*/
+
+
+#home h1 {
+    padding: 30px;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    font-family: 'Labrada', serif;
+
+}
+
+
+#home p {
+    font-size: 26px;
+    color: white;
+    font-family: 'Labrada', serif;
+    text-align: center;
+}
+
+.btn {
+    padding: 8px 20px;
+    border: 2px solid black;
+    border-radius: 13px;
+    color: white;
+    background: none;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4px 200px;
+    height: 340px;
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('images/image3.jpg') no-repeat center center/cover;
+    height: 410px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+
+}
+
+
+/* services section */
+
+
+#service-container {
+    margin: 10px;
+}
+
+#service {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+#service .box {
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    margin: 4px 30px;
+    border-radius: 50px;
+    background-color: #e4d5d5;
+}
+
+#service .box img {
+    height: 250px;
+    border-radius: 20px;
+    width: 325px;
+    display: block;
+    margin: 10px auto;
+}
+
+#service .box p {
+    font-size: 23px;
+    font-family: 'Labrada', serif;
+
+}
+
+
+/* our clients section */
+
+#client-section {
+    position: relative;
+}
+
+#clients {
+    /* margin: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients::before {
+    content: "";
+    position: absolute;
+    background: url('images/image.jpg')no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    padding-top: 55px;
+}
+
+.clients-item {
+    padding: 12px;
+
+}
+
+#clients img {
+    /* background: none; */
+    height: 130px;
+}
+
+/* contact section */
+#contact {
+    margin-top: 95px;
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url('images/image1.jpg')no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    margin-top: 20px;
+
+}
+
+#contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    font-size: 20px;
+    padding: 7px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#contact-box form {
+    width: 30%;
+}
+
+#contact-box label {
+    font-size: 25px;
+}
+
+footer {
+    /* color: white; */
+    background: black;
+    font-size: 20px;
+    padding: 8px 30px;
+    margin-top: 20px;
+}
+footer div p{
+    color: white;
+}
+
+/* Utility Class */
+
+.heading1 {
+    font-family: 'Labrada', serif;
+
+    font-size: 63px;
+    color: white;
+}
+
+.heading2 {
+    font-family: 'Labrada', serif;
+
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.center {
+    margin: 10px;
+    text-align: center;
+    color: black;
+}
